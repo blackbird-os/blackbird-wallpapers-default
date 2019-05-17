@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-wallpapers-default
+pkgver=$(date +%Y.%m)
+pkgrel=1
+pkgdesc="Wallpapers used as defaults in Blackbird OS"
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-wallpapers-default'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
